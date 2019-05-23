@@ -7,7 +7,7 @@
                 <li class="rk-menu__item"><a routerLink="about" class="rk-menu__link">Contact</a>
                 </li>
             </ul>
-            <p class="rk-footer__text rk-footer__copy "> <span class="ae-u-bold">© </span><span class="ae-u-bolder"> {{anio}} VoxInVox Porfolio</span>All Right Reserved.</p>
+            <p class="rk-footer__text rk-footer__copy "> <span class="ae-u-bold">© </span><span class="ae-u-bolder"> {{anio}} {{_infoServicio.infoObjeto.titulo}} Porfolio</span>All Right Reserved.</p>
         </div>
         <div class="ae-grid__item item-lg-4 au-xs-ta-center">
             <a href="#0" class="rk-social-btn ">
@@ -18,7 +18,7 @@
                 <svg>
           <use xlink:href="assets/img/symbols.svg#icon-twitter"></use>
         </svg></a>
-            <a href="#0" class="rk-social-btn ">
+            <a [href]="_infoServicio.infoObjeto.twitter" class="rk-social-btn ">
                 <svg>
           <use xlink:href="assets/img/symbols.svg#icon-pinterest"></use>
         </svg></a>
@@ -28,7 +28,7 @@
         </svg></a>
         </div>
         <div class="ae-grid__item item-lg-4 au-xs-ta-center au-lg-ta-right">
-            <p class="rk-footer__text rk-footer__contact "> <span class="ae-u-bold">Email: </span><span class="ae-u-bolder"> <a href="#0" class="rk-dark-color ">office@harpecorp.com </a></span></p>
+            <p class="rk-footer__text rk-footer__contact "> <span class="ae-u-bold">Email: </span><span class="ae-u-bolder"> <a href="#0" class="rk-dark-color ">{{_infoServicio.infoObjeto.email}} </a></span></p>
             <p class="rk-footer__text rk-footer__by">Theme by <a href="http://pixeden.com" class="ae-u-bolder">Pixeden.</a></p>
         </div>
     </div>
