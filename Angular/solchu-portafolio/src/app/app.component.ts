@@ -9,6 +9,9 @@ import { InfoPaginaService } from './services/info-pagina.service';
 export class AppComponent {
   title = 'solchu-portafolio';
   constructor(public _infoPaginaService:InfoPaginaService){
+
+    //Aqui se va a leer el archivo json q tiene la data global
     
+
   }
 }
